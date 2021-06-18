@@ -1,0 +1,24 @@
+.card {
+  background-color: rgb(198, 148, 218);
+}
+
+.card {
+  border: 1px solid #dadada;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  width: 100%;
+}
+
+.card h3 {
+  padding: 2px;
+  margin: 8px 0;
+}
+
+.transparentText {
+    opacity: 0.5;
+}
+
+// .image {
+//   width: 100%;
+//   clip-path: polygon(0 0, 100% 0, 100% 42%, 0 23%);
+// }

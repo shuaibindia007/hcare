@@ -1,0 +1,53 @@
+<div class="container mt-1">
+    <div class="row" >
+        <h1 style="display: flex;align-items: center;justify-content: space-between;">Appointments
+            <img src="../../assets/loader.png" alt="" class="loaderimage">
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <div class="wrapper">
+                <div href="#" class="fancy-button bg-gradient2"><span><i class="fa fa-envelope"></i>Upcoming</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2" style="margin-left: 0px;">
+            <div class="wrapper">
+                <div href="#" class="fancy-button bg-gradient1"><span><i class="fa fa-envelope"></i>Past</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2">
+            <img src="../../assets/leftarrow.png" alt="">
+            <img src="../../assets/rightarrow.png" alt="">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2" style="display: flex;align-items: center;align-content: flex-end;justify-content: flex-end;">
+            Sort By
+            <div style="display: flex;align-items: center;align-content: flex-end;justify-content: flex-end;">
+                <a class="nav-link dropdown-toggle" style="display: contents;" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Date
+                </a>
+              </div>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 50px;">
+        <ng-container *ngFor="let docDetails of Doclist">
+            <div class="col-4">
+                <app-appointment [docDetails]="docDetails"></app-appointment>
+            </div>
+        </ng-container>
+        
+        <!-- <div class="col-4">
+            <app-appointment [docDetails]="docDetails"></app-appointment>
+        </div> -->
+        <!-- <div class="col-4">
+            <app-appointment></app-appointment>
+        </div>
+        <div class="col-4">
+            <app-appointment></app-appointment>
+        </div> -->
+    </div>
+</div>

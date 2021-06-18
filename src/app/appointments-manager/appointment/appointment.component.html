@@ -1,0 +1,28 @@
+<div class="card text-center">
+    <div class="header">
+        <div class="docImage"> <img class="" src='{{docDetails.imgSrc}}' alt=""></div>
+        <div class="docDetails">
+            <div class="docName">{{docDetails.name}}</div>
+            <div class="docTitle">{{docDetails.profession}}</div>
+        </div>
+    </div>
+    <div class="card-body body">
+        <div class="docAddress">
+            <div><img class="" src="../../../assets/location.png" alt=""></div>
+            <div>{{docDetails.address}}</div>
+        </div>
+        <div class="docDate">
+            <div class="docCal"><img class="" src="../../../assets/calendar.png" alt="">{{docDetails.date}}</div>
+            <div class="docTime"><img class="" src="../../../assets/time.png" alt="">{{docDetails.time}}</div>
+        </div>
+    </div>
+    <div class="bottom">
+        <!-- <button class="btn btn-primary">Confirm</button>
+        <button class="btn btn-danger">Cancel</button> -->
+        <button type="button" class="btn btn-outline-primary btn-rounded waves-effect"><i class="icon-ok"
+            aria-hidden="true"></i>Confirm</button>
+        <button type="button" class="btn btn-outline-danger btn-rounded waves-effect"><i class="icon-remove"
+            aria-hidden="true"></i>Cancel</button>
+    </div>
+
+</div>
